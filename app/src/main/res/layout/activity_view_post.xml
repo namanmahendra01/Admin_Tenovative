@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginBottom="50dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Naman"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:id="@+id/username"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="5dp"
+        android:id="@+id/post"
+        android:layout_below="@id/username"
+        android:src="@drawable/common_google_signin_btn_text_dark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jhbschjsdbchjbdshcbhdsbcjhdbcjdbjsbjcn "
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:id="@+id/caption"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/post"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caption"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALLOW"
+            android:textSize="18sp"
+            android:id="@+id/allow"
+            android:textColor="@color/teal_700"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REJECT"
+            android:textSize="18sp"
+            android:id="@+id/reject"
+            android:layout_toRightOf="@+id/allow"
+            android:textColor="#B61313"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>
